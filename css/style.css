@@ -1,3 +1,4 @@
+
 .flex{
   display: flex;
 }
@@ -5,19 +6,19 @@
   display: flex; 
   flex-wrap: wrap;
 }
-.flex-item-1{
-  flex: 1;
-}
+
 .item{
   margin: 5px;
   background: tomato;
   text-align: center;
   font-size: 1.5em;
+  flex: 1;
 }
 .container{
   max-width: 400px;
   margin: 0 auto;
   border: 1px solid #ccc;
+  display: flex;
 }
 h1 {
   text-align: center;
@@ -28,4 +29,16 @@ h1 {
 body {
   font-family: monospace;
   color: #333;
+}
+.row{
+  flex-direction: row;
+}
+.row-reverse{
+  flex-direction: row-reverse;
+}
+.column{
+  flex-direction: column;
+}
+.column-reverse{
+  flex-direction: column-reverse;
 }
