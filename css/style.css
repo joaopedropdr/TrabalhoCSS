@@ -6,19 +6,20 @@
   display: flex; 
   flex-wrap: wrap;
 }
-
 .item{
   margin: 5px;
   background: tomato;
   text-align: center;
   font-size: 1.5em;
+  padding: 0 10px;
   flex: 1;
 }
 .container{
-  max-width: 400px;
+  max-width: 420px;
   margin: 0 auto;
   border: 1px solid #ccc;
   display: flex;
+  height: 300px;
 }
 h1 {
   text-align: center;
@@ -38,7 +39,71 @@ body {
 }
 .column{
   flex-direction: column;
+
 }
 .column-reverse{
   flex-direction: column-reverse;
+}
+.nowrap{
+  
+  flex-wrap: nowrap;
+}
+.wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+.flex-start{
+  justify-content: flex-start;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+.center{
+  justify-content: center;
+}
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.stretch{
+  align-items: stretch;
+}
+.flex_start{
+  align-items: flex-start;
+}
+.flex_end{
+  align-items: flex-end;
+}
+.center2{
+  align-items: center;
+}
+.baseline{
+  align-items: baseline;
+}
+.item2{
+  padding-top: 20px;
+}
+.centro-exato{
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.ac-stretch{
+  align-content: stretch;
+}
+.ac-flex-start{
+  align-content: flex-start;
+}
+.ac-flex-end{
+  align-content: flex-end;
+}
+.ac-center{
+  align-content: center;
+}
+.ac-space-between{
+  align-content: space-between;
+}
+.ac-space-around{
+  align-content: space-around;
 }
