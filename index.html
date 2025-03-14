@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="FlexContainer/css/style.css">
     </head>
     <body>
+      <!-- Inico da div para agrupar oo bloco 1,2 e 3 -->
+      <div class="p-space-around">
          <!-- 1-) Inicio do bloco do display: flex-->
          <div>
             <!--Bloco sem display: flex-->
@@ -86,7 +88,7 @@
            </section>
          </div>
           <!-- Fim do bloco flex-direction -->
-
+      
           <!-- 3-) Inicio do bloco flex-wrap -->
          <div>
             <!-- Flex-wrap já foi explicado,agora é só o exemplo-->
@@ -113,7 +115,7 @@
             </section>
          </div>
          <!-- Fim do bloco flex-wrap -->
-
+      </div>
          <!-- 4-) Inicio do bloco flex-flow -->
          <div>
             <!-- O flex-flow é um atalho das propriedades flex-direction
@@ -144,7 +146,7 @@
              </section>
          </div>
          <!-- Fim do bloco flex-flow -->
-
+      
          <!-- 5-) Inicio do bloco justify-content -->
          <div>
           <!-- O justify-content alinha todos os itens flex no container
@@ -199,6 +201,7 @@
               <div class="item-sflex">teste 2</div>
               <div class="item-sflex">3 </div>
               <div class="item-sflex">4</div>
+            </section>
 
             <h1>justify-content: flex-end; // column</h1>
             <section class="container2 flex-end column2">
@@ -231,10 +234,196 @@
                <div class="item-sflex">3 </div>
                <div class="item-sflex">4</div>
             </section>
+         </div>
+         <!-- Fim do bloco justify-content -->
 
+         <!-- A diferença entre o justify-content e o align-items é
+          que o justify-content é usado para criar um espaço entre os itens
+          já o alig-items é utilizado para alinhar eles ao eixo -->
+
+         <!--6-) Inicio do bloco align-items  -->
+         <div>
+            <!-- O align-items permite alinhar o conteudo de acordo com o container, 
+             o alinhamento é diferente quando está em linha ou coluna.
+             Ele permite o alinhamento no eixo vertical. -->
+
+            <!-- O align-items por padrão vem como stretch, ele deixa o height (tamanho do backgroud)
+             do tamanho da maior frase  -->
+            <h1>align-items: stretch;</h1>
+            <section class="container stretch">
+               <div class="item">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+  
+            <h1>align-items: flex-start;</h1>
+            <section class="container flex_start">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <h1>align-items: flex-end;</h1>
+            <section class="container flex_end">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <h1>align-items: center;</h1>
+            <section class="container center2">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <h1>align-items: baseline;</h1>
+            <section class="container baseline">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <!-- alingn-items em column -->
+
+            <h1>align-items: stretch // column</h1>
+            <section class="container stretch column">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <h1>align-items: flex-start // column</h1>
+            <section class="container flex_start column">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <h1>align-items: flex-end // column</h1>
+            <section class="container flex_end column">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <h1>align-items: center // column</h1>
+            <section class="container center2 column">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+
+            <h1>align-items: baseline // column</h1>
+            <section class="container baseline column">
+               <div class="item item2">1</div>
+               <div class="item">teste 2 do item</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+            </section>
+            
+            <h1>Centro exato</h1>
+            <section class="container centro-exato">
+               <div class="item">este item esta exatamente alinhado ao centro</div>
+            </section>
+         </div>
+         <!-- Fim do bloco align-items -->
+
+         <!-- 7-) Inicio do bloco align-content -->
+         <div>
+            <!-- A propriedade alinha as linhas no eixo vertical 
+            a propriedade so funciona se o flex-wrap for wrap. E a
+            propriedade só é possivel de ser viualizada se o conteiner 
+            for maior que a soma das lnhas dos itens, ou seja se 
+            voce não definir um heigth para o container ela não 
+            afetara o layout.-->
+
+            <!-- Ela tambem vem por padrão como stretch -->
+
+            <h1>align-content: stretch</h1>
+            <section class="container3 stretch">
+               <div class="item">TestandoPalavra1</div>
+               <div class="item">teste 2 do  tem</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+               <div class="item">teste 5</div>
+               <div class="item">teste 6</div>
+               <div class="item">teste 7</div>
+               <div class="item">teste 8</div>
+            </section>
+
+            <h1>align-content: flex-start</h1>
+            <section class="container3 ac-flex-start">
+               <div class="item">TestandoPalavra1</div>
+               <div class="item">teste 2 do  tem</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+               <div class="item">teste 5</div>
+               <div class="item">teste 6</div>
+               <div class="item">teste 7</div>
+               <div class="item">teste 8</div>
+            </section>
+
+            <h1>align-content: flex-end</h1>
+            <section class="container3 ac-flex-end">
+               <div class="item">TestandoPalavra1</div>
+               <div class="item">teste 2 do  tem</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+               <div class="item">teste 5</div>
+               <div class="item">teste 6</div>
+               <div class="item">teste 7</div>
+               <div class="item">teste 8</div>
+            </section>
+
+            <h1>align-content: center</h1>
+            <section class="container3 ac-center">
+               <div class="item">TestandoPalavra1</div>
+               <div class="item">teste 2 do  tem</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+               <div class="item">teste 5</div>
+               <div class="item">teste 6</div>
+               <div class="item">teste 7</div>
+               <div class="item">teste 8</div>
+            </section>
+
+
+            <h1>align-content: space-between</h1>
+            <section class="container3 ac-space-between">
+               <div class="item">TestandoPalavra1</div>
+               <div class="item">teste 2 do  tem</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+               <div class="item">teste 5</div>
+               <div class="item">teste 6</div>
+               <div class="item">teste 7</div>
+               <div class="item">teste 8</div>
+            </section>
+
+            <h1>align-content: space-around</h1>
+            <section class="container3 ac-space-around">
+               <div class="item">TestandoPalavra1</div>
+               <div class="item">teste 2 do  tem</div>
+               <div class="item">teste 3 do item agora mesmo</div>
+               <div class="item">teste 4</div>
+               <div class="item">teste 5</div>
+               <div class="item">teste 6</div>
+               <div class="item">teste 7</div>
+               <div class="item">teste 8</div>
+            </section>
 
 
          </div>
-         <!-- Fim do bloco justify-content -->
+         <!-- Fim do bloco align-content -->
     </body>
 </html>
