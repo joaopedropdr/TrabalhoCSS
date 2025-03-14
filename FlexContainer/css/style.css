@@ -1,14 +1,35 @@
+/* CSS principal */
+.container{
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-size: 1.25em;
+  font-weight: normal;
+}
+
+body {
+  font-family: monospace;
+  color: #333;
+}
+
+/* CSS usado nas divs de agrupamento p= principal */
+.p-space-between{
+  display: flex;
+  justify-content: space-between;
+}
+/* Fim do CSS principal */
+
+/* CSS do bloco 1 */
 /*Torna o elemento um flex container automaticamente 
 transformando todos os seus filhos em flex itens */
 .flex{
   display: flex;
-}
-
-/*Esse space-aroud esta sendo utilizado para 
-agrupar o bloco 1 e 2 p= principal */
-.p-space-around{
-  display: flex;
-  justify-content: space-around;
 }
 
 .flex-wrap{
@@ -24,16 +45,6 @@ itens do bloco 1 sem o flex 1;*/
   font-size: 1.5em;
 }
 
-/* item-sflex é para deixar os itens do 
-do bloco 5 sem o flex 1;*/
-.item-sflex{
-  margin: 5px;
-  padding: 0 10px;
-  background: tomato;
-  text-align: center;
-  font-size: 1.5em;
-}
-
 .item{
   flex: 1;
   margin: 5px;
@@ -42,51 +53,9 @@ do bloco 5 sem o flex 1;*/
   font-size: 1.5em;
   padding: 0px 10px;
 }
+/* Fim do CSS do bloco 1 */
 
-.container{
-  max-width: 400px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  display: flex;
-}
-
-/* O column e container 2 é
-para deixar as colunas do bloco 5 
-uma em cada container*/
-.column2 {
-  min-height: 200px;
-  flex-direction: column;
-}
-
-.container2{
-  max-width: 420px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  display: flex;
-}
-
-/* container3 vai ser usado no bloco 7*/
-.container3{
-  max-width: 420px;
-  height: 300px;
-  margin: 0 auto;
-  border: 1px solid #ccc;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-h1 {
-  text-align: center;
-  margin: 20px 0 0 0;
-  font-size: 1.25em;
-  font-weight: normal;
-}
-
-body {
-  font-family: monospace;
-  color: #333;
-}
-
+/*CSS do bloco 2 */
 .row{
   flex-direction: row;
 }
@@ -102,6 +71,13 @@ body {
 .column-reverse{
   flex-direction: column-reverse;
 }
+/*Fim do CSS do bloco 2 */
+
+/*CSS do bloco 3 */
+.flex-wrap{
+  display: flex; 
+  flex-wrap: wrap;
+}
 
 .nowrap{
   flex-wrap: nowrap;
@@ -110,7 +86,9 @@ body {
 .wrap-reverse{
   flex-wrap: wrap-reverse;
 }
+/*Fim do CSS do bloco 3 */
 
+/* CSS do bloco 4 */ 
 .row-nowrap{
   flex-flow: row nowrap;
 }
@@ -121,6 +99,28 @@ body {
 
 .column-nowrap{
   flex-flow: column nowrap;
+}
+/*Fim do CSS do bloco 4 */
+
+/* CSS do bloco 5 */
+.item-sflex{
+  margin: 5px;
+  padding: 0 10px;
+  background: tomato;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.column2 {
+  min-height: 200px;
+  flex-direction: column;
+}
+
+.container2{
+  max-width: 420px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  display: flex;
 }
 
 .flex-start{
@@ -142,7 +142,9 @@ body {
 .space-around{
   justify-content: space-around;
 }
+/* Fim do CSS do bloco 5 */
 
+/* CSS do bloco 6 */ 
 .stretch{
   align-items: stretch;
 }
@@ -161,6 +163,17 @@ body {
 
 .baseline{
   align-items: baseline;
+}
+/* Fim do CSS do bloco 6*/
+
+/*CSS do bloco 7 */
+.container3{
+  max-width: 420px;
+  height: 300px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item2{
@@ -196,3 +209,4 @@ body {
 .ac-space-around{
   align-content: space-around;
 }
+/* Fim do CSS do bloco 7 */

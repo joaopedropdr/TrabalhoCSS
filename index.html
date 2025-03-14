@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="FlexContainer/css/style.css">
     </head>
     <body>
-      <!-- Inico da div para agrupar oo bloco 1,2 e 3 -->
-      <div class="p-space-around">
+      <!-- Inico da div para agrupar oo bloco 1 e 2 -->
+      <div class="p-space-between">
          <!-- 1-) Inicio do bloco do display: flex-->
          <div>
             <!--Bloco sem display: flex-->
@@ -88,7 +88,12 @@
            </section>
          </div>
           <!-- Fim do bloco flex-direction -->
-      
+
+      </div>
+      <!-- Fim da div de agrupamento -->
+       <hr>
+       <!-- inicio da div de agrupamento do bloco 3 e 4 -->
+      <div class="p-space-between">
           <!-- 3-) Inicio do bloco flex-wrap -->
          <div>
             <!-- Flex-wrap já foi explicado,agora é só o exemplo-->
@@ -115,7 +120,7 @@
             </section>
          </div>
          <!-- Fim do bloco flex-wrap -->
-      </div>
+
          <!-- 4-) Inicio do bloco flex-flow -->
          <div>
             <!-- O flex-flow é um atalho das propriedades flex-direction
@@ -146,7 +151,10 @@
              </section>
          </div>
          <!-- Fim do bloco flex-flow -->
-      
+      </div>
+      <!-- Fim da div de agrupamento 3 e 4 -->
+      <hr>
+
          <!-- 5-) Inicio do bloco justify-content -->
          <div>
           <!-- O justify-content alinha todos os itens flex no container
@@ -201,12 +209,8 @@
               <div class="item-sflex">teste 2</div>
               <div class="item-sflex">3 </div>
               <div class="item-sflex">4</div>
-<<<<<<< HEAD
             </section>
 
-=======
-           </section>
->>>>>>> d3cc876331abe454362c055df28882cf48d85c56
             <h1>justify-content: flex-end; // column</h1>
             <section class="container2 flex-end column2">
                <div class="item-sflex">1</div>
@@ -240,6 +244,7 @@
             </section>
          </div>
          <!-- Fim do bloco justify-content -->
+      <hr>
 
          <!-- A diferença entre o justify-content e o align-items é
           que o justify-content é usado para criar um espaço entre os itens
@@ -342,6 +347,8 @@
          </div>
          <!-- Fim do bloco align-items -->
 
+      <hr>
+
          <!-- 7-) Inicio do bloco align-content -->
          <div>
             <!-- A propriedade alinha as linhas no eixo vertical 
@@ -425,7 +432,6 @@
                <div class="item">teste 7</div>
                <div class="item">teste 8</div>
             </section>
-
 
          </div>
          <!-- Fim do bloco align-content -->
