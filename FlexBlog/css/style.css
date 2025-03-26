@@ -27,7 +27,7 @@ img {
 
 /* Superindo */
 .superinfo-bg {
-    background: #122ab2;
+    background: #178bed;
     color: white;
 }
 .superinfo {
@@ -50,29 +50,27 @@ img {
 
 /*Menu*/
 .menu-bg {
-    background: #2c70ff;   
+    background: #1a1a1a;   
 }
 
+.menu-logo a img {
+    width: 200px;
+    height: auto;
+
+}
 .menu {
     max-width: 960px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 5px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu a{
+.menu a {
     color: white;
 }
-
-.menu-logo a{
-    font-size: 2.25em;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
 .menu-nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +83,7 @@ img {
 }
 
 .menu-nav a:hover{
-    color: #122ab2;
+    color: #178bed;
 }
 /*Fim menu */
 
@@ -99,8 +97,8 @@ img {
 }
 
 .sobre {
-    border-top: 2px solid #2c70ff;
-    border-bottom: 2px solid #2c70ff;
+    border-top: 2px solid #178bed;
+    border-bottom: 2px solid #178bed;
     max-width: 960px;
     margin: 0 auto;
     padding: 60px 0;
@@ -154,23 +152,22 @@ img {
     margin: 10px;
 }
 
-.produtos-item h2 {
-    font-size: 3em;
-    color: #a4a4a4;
-    background-color: #f7f7f7;
-    padding: 60px 20px;
+.linha {
+    width: 100%;
+    height: 5px;
+    background-color: #a4a4a4;
 }
 
-.purple {
-    border-top: 8px solid #ae81ff;
+.barco1 {
+    border-top: 8px solid #178bed;
 }
 
-.pink {
-    border-top: 8px solid #f9265e;
+.barco2 {
+    border-top: 8px solid #1a1a1a;
 }
 
-.blue {
-    border-top: 8px solid #66d9eb;
+.barco3 {
+    border-top: 8px solid #178bed;
 }
 /*Fim produtos */
 
@@ -193,25 +190,9 @@ img {
 
 .preco-item h2 {
     font-size: 3em;
-    color: #a4a4a4;
+    color: #222;
     text-align: center;
     margin-top: 20px;
-}
-
-.preco-item span {
-    max-width: 300px;
-    margin: 20px auto;
-    display: block;
-    font-size: 3em;
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 0 5px 0;
-    border-top: 4px solid white;
-    bottom: 4px solid white;
-}
-
-.preco-item sup {
-    font-size: 1.5rem;
 }
 
 .preco-item ul {
@@ -234,7 +215,7 @@ img {
     display: block;
     width: 6px;
     height: 6px;
-    background-color: #2c70ff;
+    background-color: #178bed;
     border-radius: 50%;
 }
 
@@ -251,7 +232,7 @@ img {
     text-align: center;
 }
 
-@media (max-whidth: 800px) {
+@media (max-width: 800px) {
     .preco {
         padding-left: 10px;
         padding-right: 10px;
@@ -265,3 +246,135 @@ img {
     }
 }
 /*Fim preço */
+
+/*Qualidade */
+.qualidade {
+    display: flex;
+    margin: 60px auto;
+    max-width: 960px;
+    flex-wrap: wrap;
+}
+
+.qualidade-item {
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+    font-size: 2.25em;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.qualidade-item h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    margin-right: 10px;
+    height: 30px;
+    background-color: blue;
+}
+/*nth-of-type(3n+1) esse pseudo seletor pega o before do primeiro item e depois seleciona o mesmo para o terceiro item apos o primeiro */
+.qualidade-item:nth-of-type(3n+1) h2::before { 
+    background-color: #178bed;
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before { 
+    background-color: #1a1a1a;
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before { 
+    background-color: #178bed;
+}
+
+.qualidade-item p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+/*FIm qualidade */
+
+/*Newsletter */
+.newsletter {
+    background-color: #1a1a1a;
+    padding: 10px calc((100% - 960px) / 2); /*calculo feito para quando diminuir a página 
+                                             o conteudo diminuir e continuar alinhado */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-info {
+    flex: 1 1 260px; /*Se o flex-basis for 0, vai dar problema no safari*/
+    margin: 0 10px;
+}
+
+.newsletter-info h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.newsletter-info p {
+    font-size: 1.25em;
+    font-style: italic;
+    max-width: 230px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    flex: 2 1 50px;
+    margin: 0 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    flex: 3 1 50px;
+    font-size: 1.25em;
+    color: #7c7c7c;
+    font-style: italic;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    border: 4px solid #178bed;
+    background: #fff;
+    margin: 0px;
+    border-radius: 0px;
+    padding: 15px 10px;
+}
+
+.newsletter-form button {
+    flex: 1 1 50px;
+    font-family: "Nunito", Helvetica, Arial, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #178bed;
+    color: white;
+    margin: 0px;
+    cursor: pointer;
+    border: 0px;
+    padding: 15px 10px;
+}
+
+@media (max-width: 600px) {
+    .newsletter-form button {
+    font-size: 1.5em;
+    }
+}
+/*Fim newsletter */
+
+/*Footer */
+.footer {
+    display: flex;
+    background-color: #178bed;
+    height: 50px;
+    align-items: center;
+}
+
+.footer p {
+    flex: 1;
+    font-size: 1.25em;
+    color: #fff;
+    text-align: center;
+}
+/*Fim footer*/
